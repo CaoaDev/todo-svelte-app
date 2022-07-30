@@ -4,7 +4,7 @@ This template should help get you started developing with Svelte in Vite.
 
 ## Recommended IDE Setup
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+[Ecovim](https://github.com/ecosse3/nvim/tree/master/lua) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
 
 ## Need an official Svelte framework?
 
