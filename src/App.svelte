@@ -1,9 +1,9 @@
 <script>
   let todos = []
   let todo = {
-    id:'',
-    text:'',
-    estado:false
+    id: '',
+    text: '',
+    estado: false
   }
 
   if(localStorage.getItem('todos')){
@@ -83,7 +83,7 @@
 
 <main>
   <div class='container'>
-  <h1 class='display-5 my-3'>CRUD</h1>
+  <h1 class='display-5 my-3'>Todos List</h1>
     <form on:submit|preventDefault={addTodo} action="">
       <input
         type="text"
@@ -97,7 +97,7 @@
         <p
           class={item.estado ? 'text-decoration-line-through' : ''}
         >
-          {item.texto}
+          {item.text}
         </p>
         <button class="btn btn-sm {classColor(item.estado)}" on:click={editTodo(item.id)}>
           <i class={classIcon(item.estado)}>{classText(item.estado)}</i>
