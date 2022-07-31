@@ -79,7 +79,7 @@
 
 <main>
   <div class='container'>
-  <h1 class='display-5 my-3'>CRUD</h1>
+  <h1 class='display-5 my-3'>Lista de Tareas!!!</h1>
     <form on:submit|preventDefault={addTodo} action="">
       <input
         type="text"
