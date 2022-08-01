@@ -40,6 +40,8 @@
 
 <style>
   input.form-control {
+    background-color: #E1F4F9;
+    border-radius: 10px;
     margin-top: 30px;
     margin-bottom: 35px;
     will-change: filter;
