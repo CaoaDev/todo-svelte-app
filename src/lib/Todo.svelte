@@ -29,8 +29,8 @@ timer: 1000
   const classEstado = (valor) => valor ? "btn-outline-success" : "btn-outline-warning";
 </script>
 
-<div class="shadow my-3 p-3 lead" on:click={editTodo(item.id)}>
-  <p class={item.estado ? "text-decoration-line-through" : ""}>
+<div class="shadow my-3 p-3 lead">
+  <p on:click={editTodo(item.id)} class={item.estado ? "text-decoration-line-through" : ""}>
     <b>{item.texto}</b>
   </p>
 
