@@ -25,7 +25,7 @@
 
 <style>
   h1.display-5 {
-    color: #BBD01F;
+    color: #E9DE7A;
     font-weight: bold;
     text-align: center;
   }

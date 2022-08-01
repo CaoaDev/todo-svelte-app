@@ -40,15 +40,15 @@
 
 <style>
   input.form-control {
-    background-color: #E1F4F9;
+    background-color: #73FAC9;
     border-radius: 10px;
-    color: #003F9F;
+    color: #0054C0;
     font-weight: bolder;
     margin-top: 30px;
     margin-bottom: 35px;
     will-change: filter;
   }
   input.form-control:hover {
-    filter: drop-shadow(0 0 2em #0061A8);
+    filter: drop-shadow(0 0 2em #0099FA);
   }
 </style>

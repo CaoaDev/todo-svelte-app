@@ -48,14 +48,14 @@
 
 <style>
   div.shadow {
-    background-color: #AAAABC;
+    background-color: #009AB8;
     border-radius: 10px;
     will-change: filter;
   }
   p {
     background-color: #F2ECFF;
     border-radius: 6px;
-    color: #00C2DA;
+    color: #2AA63D;
     font-weight: normal;
   }
   div.shadow:hover {
