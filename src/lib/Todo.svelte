@@ -1,5 +1,5 @@
 <script>
-  import { todos} from "../stores.js";
+  import { todos } from "../stores.js";
 
   export let item;
 
@@ -45,3 +45,12 @@
     <i class="bi bi-trash" />
   </button>
 </div>
+
+<style>
+  div.shadow {
+     will-change: filter;
+  }
+  div.shadow:hover {
+    filter: drop-shadow(0 0 2em #ff3e00aa); 
+  }
+</style>

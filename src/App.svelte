@@ -13,10 +13,18 @@
 
 <main>
   <div class="container">
-    <h1 class="display-5 my-3">Lista de Tareas!!!</h1>
+    <h1 class="display-5 my-3"><b><center>Lista de Tareas!!!</center></b></h1>
     <TodoAdd />
     {#each $todos as item}
       <Todo {item} />
     {/each}
   </div>
 </main>
+
+<style>
+  main {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+  }
+</style>

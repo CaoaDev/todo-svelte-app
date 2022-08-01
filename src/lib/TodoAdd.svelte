@@ -1,7 +1,7 @@
 <script>
   import { todos } from "../stores";
 
-  let todo = { id: "", texto: "", estado: false };
+  let todo = { id: {}, texto: "", estado: false };
 
   const addTodo = () => {
     if(todo.texto.length < 4){
@@ -37,3 +37,14 @@
     bind:value={todo.texto}
   />
 </form>
+
+<style>
+  input.form-control {
+    margin-top: 30px;
+    margin-bottom: 35px;
+    will-change: filter;
+  }
+  input.form-control:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+</style>
