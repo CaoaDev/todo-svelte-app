@@ -42,11 +42,13 @@
   input.form-control {
     background-color: #E1F4F9;
     border-radius: 10px;
+    color: #003F9F;
+    font-weight: bolder;
     margin-top: 30px;
     margin-bottom: 35px;
     will-change: filter;
   }
   input.form-control:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #0061A8);
   }
 </style>
