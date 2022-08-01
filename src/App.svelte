@@ -15,6 +15,7 @@
     <h1 class="display-5 my-3">
       Lista de Tareas!!! "{$todos.length}"
     </h1>
+    <hr />
     <TodoAdd />
     {#each $todos as item}
       <Todo {item} />
@@ -29,6 +30,9 @@
     text-align: center;
   }
 
+  hr {
+    color: gold; 
+  }
   main {
     height: 97.5vh;
     padding: 0px;

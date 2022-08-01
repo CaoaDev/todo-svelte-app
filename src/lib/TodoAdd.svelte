@@ -22,9 +22,9 @@
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Tu tarea se ha guarado correctamente',
+      title: 'Saved',
       showConfirmButton: false,
-      timer: 1000
+      timer: 700
     })
   };
 </script>

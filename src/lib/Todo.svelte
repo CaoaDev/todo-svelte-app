@@ -8,9 +8,9 @@
       Swal.fire({
         position: 'center',
         icon: 'success',
-        title: 'Tu tarea se ha eliminado',
+        title: 'Delete',
         showConfirmButton: false,
-timer: 1000
+        timer: 700
       })
     };
 
@@ -19,9 +19,9 @@ timer: 1000
     Swal.fire({
       position: 'center',
       icon: 'success',
-      title: 'Tu tarea se ha editado',
+      title: 'Edit',
       showConfirmButton: false,
-      timer: 1000
+      timer: 700
     })
   };
 
