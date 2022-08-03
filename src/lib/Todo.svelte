@@ -1,5 +1,5 @@
 <script>
-  import { todos } from "../stores.js";
+  import { todos } from '../store/stores'; 
 
   export let item;
 

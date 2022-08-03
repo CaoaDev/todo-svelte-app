@@ -1,5 +1,5 @@
 <script>
-  import { todos } from './stores'
+  import { todos } from "./store/stores"; 
   import TodoAdd from "./lib/TodoAdd.svelte";
   import Todo from './lib/Todo.svelte';
 
@@ -28,8 +28,11 @@
     color: #E9DE7A;
     font-weight: bold;
     text-align: center;
+    user-select: none;
   }
-
+  h1.display-5:hover {
+    filter: drop-shadow(0 0 1em gold); 
+  }
   hr {
     color: gold; 
   }
