@@ -14,9 +14,9 @@
       })
     };
 
-  const editText = (text) => {
-    todo.update(text)
-    const { value: texto } = Swal.fire({
+  const editText = (id) => {
+    todos.update(item.texto)
+    const { value: text } = Swal.fire({
       input: 'textarea',
       inputLabel: 'Message',
       inputPlaceholder: 'Type your message here...',
@@ -26,8 +26,8 @@
       showCancelButton: true
     })
 
-    if (texto) {
-      Swal.fire(texto)
+    if (text) {
+      Swal.fire(text)
     }
   }
 
@@ -47,7 +47,7 @@
 </script>
 
 <div class="shadow my-3 p-3 lead">
-  <p on:click={editText(item.text)} class={item.estado ? "text-decoration-line-through" : ""}>
+  <p on:click={editText(item.texto)} class='p-editext' >
     <b>{item.texto}</b>
   </p>
 
@@ -73,6 +73,7 @@
     background-color: #F2ECFF;
     border-radius: 6px;
     color: #2AA63D;
+    user-select: none;
     font-weight: normal;
   }
   div.shadow:hover {

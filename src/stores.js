@@ -1,5 +1,7 @@
 import { writable } from 'svelte/store'
 
+export let editText
+
 const createTodos = () => {
   const { subscribe, set, update } = writable([])
 
@@ -7,9 +9,9 @@ const createTodos = () => {
     subscribe,
     local: todos => { set(todos) },
 
-    // update: todo => { update(todo => todo.id = [...todo.id, todo.text]) },
-
     add: todo => { update(todos => todos = [...todos, todo]) },
+
+    editText: todo => { update(todos => todos = todos.map((item) => item.texto === todo))},
 
     delete: id => { update(todos => todos = todos.filter((item) => item.id !== id)) },
 
