@@ -1,5 +1,5 @@
 <script>
-  import { todos } from '../store/stores'; 
+  import { todos } from '../stores'; 
 
   export let item;
 
@@ -13,6 +13,23 @@
         timer: 700
       })
     };
+
+  const editText = (text) => {
+    todo.update(text)
+    const { value: texto } = Swal.fire({
+      input: 'textarea',
+      inputLabel: 'Message',
+      inputPlaceholder: 'Type your message here...',
+      inputAttributes: {
+        'aria-label': 'Type your message here'
+      },
+      showCancelButton: true
+    })
+
+    if (texto) {
+      Swal.fire(texto)
+    }
+  }
 
   const editTodo = (id) => {
     todos.put(id)
@@ -30,7 +47,7 @@
 </script>
 
 <div class="shadow my-3 p-3 lead">
-  <p on:click={editTodo(item.id)} class={item.estado ? "text-decoration-line-through" : ""}>
+  <p on:click={editText(item.text)} class={item.estado ? "text-decoration-line-through" : ""}>
     <b>{item.texto}</b>
   </p>
 

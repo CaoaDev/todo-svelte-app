@@ -1,5 +1,5 @@
 <script>
-  import { todos } from "../store/stores";
+  import { todos } from "../stores";
 
   let todo = { id: {}, texto: "", estado: false };
 

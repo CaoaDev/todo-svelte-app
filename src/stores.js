@@ -7,6 +7,8 @@ const createTodos = () => {
     subscribe,
     local: todos => { set(todos) },
 
+    // update: todo => { update(todo => todo.id = [...todo.id, todo.text]) },
+
     add: todo => { update(todos => todos = [...todos, todo]) },
 
     delete: id => { update(todos => todos = todos.filter((item) => item.id !== id)) },
@@ -22,6 +24,7 @@ const createTodos = () => {
       }
     }))
   }
-}}
+}
+}
 
 export const todos = createTodos()
